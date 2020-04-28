@@ -1,3 +1,26 @@
+const form = document.querySelector('form');
+const input = document.querySelector('#phone-number');
+const result = document.querySelector('#result');
+
+form.addEventListener('submit', (e) => {
+  // GET INPUT
+  let phoneNumber = input.value;
+
+  // TEST INPUT
+  let validFormat = telephoneCheck(phoneNumber);
+
+  // DISPLAY RESULT
+  result.innerHTML = `Result: ${
+    validFormat ? "It's VALID" : 'NOT A VALID NUMBER'
+  }`;
+
+  e.preventDefault();
+});
+
+// =========================================
+// TELEPHONE NUMBER VALIDATOR
+// =========================================
+
 function telephoneCheck(str) {
   let telephoneArr = str.split('');
   let firstIndex = telephoneArr[0];
@@ -264,4 +287,4 @@ function telephoneCheck(str) {
 // console.log('=============================');
 // console.log('(555) 555 5555', telephoneCheck("(555) 555 5555"));
 // console.log('=============================');
-// console.log("2 (757) 622-7382", telephoneCheck("2 (757) 622-7382"));
+// console.log('2 (757) 622-7382', telephoneCheck('2 (757) 622-7382'));

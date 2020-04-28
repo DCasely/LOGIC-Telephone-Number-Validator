@@ -104,17 +104,28 @@
         <div class="row">
           <div class="col text-center">
             <h1>LOGIC: Telephone Number Validator</h1>
+            <p>Examples of Valid Formats Below:</p>
+            <ul>
+              <li>555-555-5555</li>
+              <li>(555)555-5555</li>
+              <li>(555) 555-5555</li>
+              <li>555 555-5555</li>
+              <li>5555555555</li>
+              <li>1 555 555 5555</li>
+            </ul>
             <p>
               Test A Phone Number To See If It's A Valid Format
             </p>
             <form action="">
               <input
+                id="phone-number"
                 class="inputs"
                 type="text"
                 placeholder="Type a Phone Number"
               />
               <input class="inputs" type="submit" value="submit" />
             </form>
+            <h1 id="result">Result</h1>
           </div>
         </div>
       </div>
