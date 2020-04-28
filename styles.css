@@ -2,7 +2,8 @@
 font-family: 'Lobster', cursive; */
 
 body {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 
 .container-fluid {
@@ -12,28 +13,36 @@ body {
     rgba(171, 171, 171, 1) 0%,
     rgba(177, 32, 53, 1) 100%
   );
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 h1 {
+  font-family: 'Lobster', cursive;
   font-size: 3rem;
 }
 
 p {
-  font-family: 'Lobster', cursive;
   font-size: 1.5rem;
 }
 
+ul {
+  margin: 1rem auto;
+  width: 15rem;
+}
+
 li {
-  font-family: 'Courier New', Courier, monospace;
-  list-style-type: none;
+  /* list-style-type: none; */
+  text-align: left;
 }
 
 .inputs {
   display: block;
   margin: 1rem auto;
   font-size: 1.5rem;
+}
+
+#submit-button {
 }
