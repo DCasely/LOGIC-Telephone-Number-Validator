@@ -4,6 +4,8 @@ font-family: 'Lobster', cursive; */
 body {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
+  background: url(./telephone-validator-background.jpg) no-repeat center center
+    fixed;
 }
 
 #navigation-container {
@@ -24,12 +26,6 @@ nav {
 }
 
 .container-fluid {
-  background: rgb(171, 171, 171);
-  background: radial-gradient(
-    circle,
-    rgba(171, 171, 171, 1) 0%,
-    rgba(177, 32, 53, 1) 100%
-  );
   min-height: 100vh;
   display: flex;
   justify-content: center;
